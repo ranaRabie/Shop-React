@@ -1,0 +1,152 @@
+// NavBar
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+// Main
+main {
+  margin-top: 56px;
+  section.container {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+}
+
+// Page Title
+#pg-tit {
+  background-color: #eee;
+  h1 {
+    padding: 1rem;
+    font-weight: bold;
+  }
+}
+
+// Product
+.product-item {
+  background-color: #fff;
+  padding: 1rem 1.5rem;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba($color: #000000, $alpha: 0.3);
+  margin-bottom: 1rem;
+  .prod-img {
+    height: 200px;
+    width: auto;
+    margin-bottom: 1rem;
+    display: block;
+    img {
+      height: 100%;
+      margin: 0 auto;
+      display: block;
+      max-width: 100%;
+    }
+  }
+  h4 {
+    font-size: 1.1rem;
+    font-weight: bold;
+    a {
+      color: #000 !important;
+      text-decoration: none !important;
+      display: block;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+  &:hover {
+    box-shadow: 0 0 3px rgba($color: #000000, $alpha: 0.3);
+  }
+}
+
+// Product Details
+.product-details-container {
+  .prod-img {
+    height: 250px;
+    width: auto;
+    margin-bottom: 2rem;
+    img {
+      height: 100%;
+      max-width: 100%;
+    }
+  }
+  h3 {
+    font-weight: bold;
+  }
+}
+
+// Cart
+#cart {
+  table {
+    th {
+      text-transform: capitalize;
+    }
+    td {
+      img {
+        width: 30px;
+        height: auto;
+      }
+      .prod-counter {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        > div {
+          margin: 0 1rem;
+        }
+      }
+    }
+  }
+  #totalBox {
+    .totalBoxInner {
+      width: 400px;
+      margin-top: 2rem;
+    }
+  }
+}
+
+// Total and Order Summary
+#totalBox {
+  display: flex;
+  justify-content: flex-end;
+  .totalBoxInner {
+    padding: 1rem;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 100%;
+    td {
+      padding: 0.5rem 0;
+    }
+    .total-row {
+      td {
+        padding: 2rem 0 1rem;
+      }
+    }
+    img {
+      width: 20px;
+      height: auto;
+    }
+    .prod-name {
+      max-width: 200px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: inline-block;
+    }
+  }
+}
+
+// Loader
+.loader {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgba($color: #fff, $alpha: 0.95);
+  z-index: 1009;
+  top: 0;
+  right: 0;
+}
