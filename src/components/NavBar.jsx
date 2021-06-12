@@ -6,7 +6,6 @@ import MyContext from '../MyContext';
 const NavBar = (props) => {
     const cartCounter = React.useContext(MyContext).cart.count;
     const location = useLocation();
-    console.log(location.pathname);
     return (
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
             <Link className="navbar-brand font-weight-bold" to="/">Shop</Link>
